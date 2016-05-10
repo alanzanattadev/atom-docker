@@ -1,0 +1,25 @@
+{
+  "name": "docker",
+  "main": "./lib/docker",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": [
+      "docker:toggle",
+      "docker:select-compose-file"
+    ]
+  },
+  "repository": "https://github.com/atom/docker",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "ansi-to-html": "^0.4.1",
+    "immutable": "^3.8.1",
+    "js-yaml": "^3.6.0",
+    "lodash": "^4.12.0",
+    "react-for-atom": "^15.0.2-0"
+  }
+}
