@@ -10,7 +10,7 @@
       "docker:select-compose-file"
     ]
   },
-  "repository": "https://github.com/atom/docker",
+  "repository": "https://github.com/alanzanattadev/atom-docker",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
