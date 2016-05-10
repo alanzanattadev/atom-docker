@@ -2,7 +2,7 @@
   "name": "docker",
   "main": "./lib/docker",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Docker integration for Atom",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
