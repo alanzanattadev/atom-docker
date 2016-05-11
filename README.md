@@ -13,3 +13,10 @@ Features:
   - Compose commands UI for up, restart, stop, rm on all or specific service
   - Colored Logs Panel with auto attachment
   - On the fly Log Filters with service selection and compose specific logs
+
+## TO-DO:
+  - [ ] Build compose services with UI
+  - [ ] Build and tags docker images
+  - [ ] Push to Docker Registry
+  - [ ] Command in progress status
+  - [ ] Change service name color if running or exited (green / red)
