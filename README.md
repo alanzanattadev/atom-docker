@@ -15,7 +15,7 @@ Features:
   - On the fly Log Filters with service selection and compose specific logs
 
 ## TO-DO:
-  - [ ] Build compose services with UI
+  - [x] Build compose services with UI
   - [ ] Build and tags docker images
   - [ ] Push to Docker Registry
   - [ ] Command in progress status
