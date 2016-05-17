@@ -109,8 +109,15 @@
   .service-name {
     padding: 5px;
     width: 150px;
+    color: @background-color-warning;
     &:hover {
       background-color: @background-color-highlight;
+    }
+    &.up {
+      color: @background-color-success;
+    }
+    &.down {
+      color: @background-color-error;
     }
   }
 

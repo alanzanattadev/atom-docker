@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "ansi-to-html": "^0.4.1",
+    "classnames": "^2.2.5",
     "immutable": "^3.8.1",
     "js-yaml": "^3.6.0",
     "lodash": "^4.12.0",
