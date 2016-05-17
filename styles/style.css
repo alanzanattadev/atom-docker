@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'icon-docker';
+    src:
+        url('atom://docker/assets/fonts/icon-docker.woff') format('woff'),
+        url('atom://docker/assets/fonts/icon-docker.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-docker-"], [class*=" icon-docker-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icon-docker' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-docker-restart:before {
+    content: "\e900";
+}
+.icon-docker-build:before {
+    content: "\e903";
+}
+.icon-docker-rm:before {
+    content: "\e908";
+}
+.icon-docker-up:before {
+    content: "\e90a";
+}
+.icon-docker-stop:before {
+    content: "\e90b";
+}
+.icon-docker-ps:before {
+    content: "\e901";
+}
+.icon-docker-push:before {
+    content: "\e90c";
+}

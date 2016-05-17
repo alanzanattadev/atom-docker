@@ -31,7 +31,7 @@
     height: 300px;
   }
   .compose-control {
-    &[type="button"] {
+    &.text[type="button"] {
       background-color: @base-background-color;
       border: 1px solid @background-color-success;
       border-radius: 10%;
@@ -42,6 +42,18 @@
         border-color: @text-color;
       }
     }
+    &.icon[type="button"] {
+      border: 0px solid @background-color-success;
+      paddingTop: 5px;
+      paddingBottom: 5px;
+      border-radius: 10%;
+      background-color: @base-background-color;
+      color: @text-color;
+      &:hover {
+        color: @background-color-success;
+      }
+
+    }
 
     &[type="checkbox"] {
       top: 0.25em;
@@ -50,7 +62,7 @@
       position: relative;
       width: 1.5em;
       height: 1.5em;
-      margin: 0 .5em 0 0; // Bootstrap override
+      margin: 0 .5em 0 5px; // Bootstrap override
       vertical-align: text-bottom;
       font-size: inherit;
       border-radius: @component-border-radius;
