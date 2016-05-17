@@ -1,3 +1,4 @@
+## 0.6.0 - Adds icons
 ## 0.5.0 - Adds Push Button
 ## 0.4.0 - Adds PS Button and Service State Colors
 ## 0.3.0 - Adds Build Button and handles output of every commands

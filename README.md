@@ -10,8 +10,12 @@ Be productive while working on dockerized project with the Compose Panel for Ato
 
 Features:
   - Selection of compose file to work with with docker:select-compose-file
-  - Compose commands UI for up, build, restart, stop, rm on all or specific service
-  - Colored Logs Panel with auto attachment
+  - Compose commands UI for up, push, build, restart, stop, rm on all or specific service
+  - Colored Logs Panel with
+    - auto attachment
+    - detach / reattach buttons
+    - real time output following
+    - unfollow logs when scrolled up and follow when max scrolled down
   - Service list with color depending on state
   - On the fly Log Filters with service selection and compose specific logs
   - Tag and push compose services (requires image and build attributs on service definition)
