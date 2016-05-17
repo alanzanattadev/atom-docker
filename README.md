@@ -14,10 +14,11 @@ Features:
   - Colored Logs Panel with auto attachment
   - Service list with color depending on state
   - On the fly Log Filters with service selection and compose specific logs
+  - Tag and push compose services (requires image and build attributs on service definition)
 
 ## TO-DO:
   - [x] Build compose services with UI
   - [ ] Build and tags docker images
-  - [ ] Push to Docker Registry
+  - [x] Tag and Push to Docker Registry
   - [ ] Command in progress status
   - [x] Change service name color if running or exited (green / red)
