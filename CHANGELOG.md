@@ -1,3 +1,4 @@
+## 0.4.0 - Adds PS Button and Service State Colors
 ## 0.3.0 - Adds Build Button and handles output of every commands
 ## 0.2.0 - Compose File Version 1 Support
 ## 0.1.0 - First Release
