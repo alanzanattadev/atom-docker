@@ -1,3 +1,4 @@
+## 0.6.1 - Change style and adds option to suppress success notifications
 ## 0.6.0 - Adds icons
 ## 0.5.0 - Adds Push Button
 ## 0.4.0 - Adds PS Button and Service State Colors
