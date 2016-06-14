@@ -8,6 +8,8 @@ Docker integration for Atom
 
 Be productive while working on dockerized project with the Compose Panel for Atom
 
+Usage : select docker:select-compose-file in command palette with compose file opened
+
 Features:
   - Selection of compose file to work with with docker:select-compose-file
   - Compose commands UI for up, push, build, restart, stop, rm on all or specific service
