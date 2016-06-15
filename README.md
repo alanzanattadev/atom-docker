@@ -12,6 +12,7 @@ Usage : select docker:select-compose-file in command palette with compose file o
 
 Features:
   - Selection of compose file to work with with docker:select-compose-file
+  - Selection of more compose files (ex : docker-compose -f ./data.yml -f ./web.yml) with docker:add-compose-file
   - Compose commands UI for up, push, build, restart, stop, rm on all or specific service
   - Colored Logs Panel with
     - auto attachment
@@ -27,4 +28,5 @@ Features:
   - [ ] Build and tags docker images
   - [x] Tag and Push to Docker Registry
   - [ ] Command in progress status
+  - [x] Multi compose files
   - [x] Change service name color if running or exited (green / red)

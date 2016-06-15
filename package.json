@@ -10,6 +10,9 @@
       "docker:select-compose-file"
     ]
   },
+  "scripts": {
+    "test": "jest"
+  },
   "repository": "https://github.com/alanzanattadev/atom-docker",
   "license": "MIT",
   "engines": {
@@ -23,5 +26,12 @@
     "lodash": "^4.12.0",
     "react-for-atom": "^15.0.2-0",
     "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^12.1.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "flow-bin": "^0.27.0",
+    "jest-cli": "^12.1.1"
   }
 }
