@@ -1,3 +1,4 @@
+## 0.7.0 - Adds multi compose files managment, adds clear logs button
 ## 0.6.1 - Change style and adds option to suppress success notifications
 ## 0.6.0 - Adds icons
 ## 0.5.0 - Adds Push Button
