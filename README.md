@@ -11,7 +11,7 @@ Be productive while working on dockerized project with the Compose Panel for Ato
 Usage : select docker:select-compose-file in command palette with compose file opened
 
 Features:
-  - Selection of compose file to work with with docker:select-compose-file
+  - Selection of compose file to work with docker:select-compose-file
   - Selection of more compose files (ex : docker-compose -f ./data.yml -f ./web.yml) with docker:add-compose-file
   - Compose commands UI for up, push, build, restart, stop, rm on all or specific service
   - Colored Logs Panel with
