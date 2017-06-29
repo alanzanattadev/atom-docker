@@ -1,6 +1,38 @@
 {
   "context-menu": {
-    "atom-text-editor": []
+    "atom-text-editor": [
+      {
+        "label": "Select docker compose file",
+        "command": "docker:select-compose-file"
+      },
+      {
+        "label": "Add docker compose file",
+        "command": "docker:add-compose-file"
+      }
+    ]
   },
-  "menu": []
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Docker",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "docker:toggle"
+            },
+            {
+              "label": "Select compose file",
+              "command": "docker:select-compose-file"
+            },
+            {
+              "label": "Add compose file",
+              "command": "docker:add-compose-file"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
