@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    
+    "alt-shift-d": "docker:toggle",
+    "alt-shift-c": "docker:select-compose-file"
   }
 }
