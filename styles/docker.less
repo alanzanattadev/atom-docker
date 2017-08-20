@@ -6,63 +6,90 @@
 
 .docker {
   display: flex;
+
+  table.services {
+    padding: 10px;
+    display: block;
+
+    & tr td {
+      text-align: center;
+    }
+
+    & tr td:first-of-type {
+      text-align: left;
+    }
+
+    & tr td:not(first-of-type) {
+      padding: 0 .5em 1em 0;
+    }
+  }
+
   .title {
     margin: 10px;
   }
-  input[type="text"] {
-		width: 100%;
-		background: @base-background-color;
-		color: @text-color;
-		margin: 0px;
-		outline: 0px;
-		padding: 5px 12px;
-		border: 0px;
-		border-radius: 5px;
 
-		&::-webkit-input-placeholder { color: @text-color-subtle; }
-	}
+  input[type="text"] {
+    width: 100%;
+    background: @tree-view-background-color;
+    color: @text-color;
+    margin: 0px;
+    outline: 0px;
+    padding: 5px 12px;
+    border: 0px;
+    border-radius: 5px;
+
+    &::-webkit-input-placeholder {
+      color: @text-color-subtle;
+    }
+  }
 
   .compose-panel {
     display: flex;
     flex: 1;
     flex-direction: row;
-    background-color: @base-background-color;
+    background-color: @tree-view-background-color;
     max-height: 300px;
     height: 300px;
   }
+
   .compose-control {
     &.text[type="button"] {
-      background-color: @base-background-color;
+      background-color: @tree-view-background-color;
       border: 1px solid @background-color-success;
       border-radius: 10%;
       color: @text-color;
       margin-right: 10px;
+
       &:hover {
         color: @background-color-success;
         border-color: @text-color;
       }
     }
+
     &.icon[type="button"] {
       border: 0px solid @background-color-success;
-      paddingTop: 5px;
-      paddingBottom: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       border-radius: 10%;
-      background-color: @base-background-color;
+      background-color: @tree-view-background-color;
       color: @text-color;
+
+      &::before {
+        margin-right: 0;
+      }
+
       &:hover {
         color: @background-color-success;
       }
-
     }
 
     &[type="checkbox"] {
-      top: 0.25em;
       -webkit-appearance: none;
       display: inline-block;
       position: relative;
       width: 1.5em;
       height: 1.5em;
-      margin: 0 .5em 0 5px; // Bootstrap override
+      margin: 0 .5em 0 .5em; // Bootstrap override
       vertical-align: text-bottom;
       font-size: inherit;
       border-radius: @component-border-radius;
@@ -72,8 +99,9 @@
 
       &:focus {
         outline: 0;
-        box-shadow: 0 0 0 1px @base-border-color;
+        box-shadow: 0 0 0 1px @tree-view-background-color;
       }
+
       &:active {
         background-color: @background-color-success;
       }
@@ -88,15 +116,17 @@
         min-height: 2px;
         max-height: 5px;
         border-radius: 1px;
-        background-color: @base-background-color;
+        background-color: @tree-view-background-color;
         transform-origin: 0 0;
         opacity: 0;
         transition: transform .1s cubic-bezier(0.5, 0.15, 0.2, 1), opacity .1s cubic-bezier(0.5, 0.15, 0.2, 1);
       }
+
       &:before {
         width: .35em;
         transform: translate3d(0,0,0) rotate(225deg) scale(0);
       }
+
       &:after {
         width: .7em;
         margin: -1px;
@@ -106,14 +136,17 @@
 
       &:checked {
         background-color: @background-color-success;
+
         &:active {
           background-color: @text-color-subtle;
         }
+
         &:before {
           opacity: 1;
           transform: translate3d(0,0,0) rotate(225deg) scale(1);
           transition-delay: .05s;
         }
+
         &:after {
           opacity: 1;
           transform: translate3d(0, 0, 0) rotate(-45deg) scale(1);
@@ -123,9 +156,11 @@
 
       &:indeterminate {
         background-color: @background-color-success;
+
         &:active {
           background-color: @text-color-subtle;
         }
+
         &:after {
           opacity: 1;
           transform: translate3d(-.125em, -.25em, 0) rotate(0deg) scale(1);
@@ -134,16 +169,17 @@
       }
     }
   }
+
   .service-name {
     padding: 5px;
     width: 150px;
     color: @background-color-warning;
-    &:hover {
-      background-color: @background-color-highlight;
-    }
+    cursor: default;
+
     &.up {
       color: @background-color-success;
     }
+
     &.down {
       color: @background-color-error;
     }
