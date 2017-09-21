@@ -11,6 +11,17 @@
     padding: 10px;
     display: block;
 
+    & thead,
+    & tbody {
+      display: block;
+    }
+
+    & tbody {
+      overflow: auto;
+
+      max-height: calc(~"100% - 30px");
+    }
+
     & tr td {
       text-align: center;
     }
@@ -21,6 +32,14 @@
 
     & tr td:not(first-of-type) {
       padding: 0 .5em 1em 0;
+    }
+
+    & td.control-width {
+      min-width: 50px;
+      max-width: 50px;
+
+      text-align: center
+      width: 50px;
     }
   }
 
@@ -168,6 +187,10 @@
         }
       }
     }
+  }
+
+  thead .service-name {
+    color: @text-color;
   }
 
   .service-name {
