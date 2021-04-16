@@ -10,6 +10,7 @@
   table.services {
     padding: 10px;
     display: block;
+    overflow-x: auto;
 
     & thead,
     & tbody {
@@ -69,6 +70,7 @@
     background-color: @tree-view-background-color;
     max-height: 300px;
     height: 300px;
+    width: 100%;
   }
 
   .compose-control {
@@ -195,7 +197,7 @@
 
   .service-name {
     padding: 5px;
-    width: 150px;
+    max-width: 150px;
     color: @background-color-warning;
     cursor: default;
 
@@ -209,6 +211,7 @@
   }
 
   .service-logs {
+    overflow-x: auto;
     background-color: @tree-view-background-color;
     font-family: 'Ubuntu Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace;
     font-size: @font-size;
